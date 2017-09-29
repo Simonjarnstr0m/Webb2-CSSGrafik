@@ -1,0 +1,29 @@
+@mixin heartpixelcolor ($heratmap){
+    $herat-colors: (
+   t: transparent,
+   g:#2D2C2C,
+   r: #DB133A,
+   w:#C8C8C8
+    );
+    
+       .px{
+   //background: map-get($herat-colors, "g");
+   
+   height:(100%/6) ;
+   width: (100%/7) ;
+   
+   float: left;   
+   }
+   $num: 1; // villken pixel vi ska färglägga
+   
+   @each $value in $heratmap {
+       .px:nth-child(#{$num}){
+           background-color: map-get($herat-colors,$value); 
+       }
+   $num: $num+1
+   
+   }
+   
+   
+   
+   }

@@ -1,0 +1,57 @@
+body {
+  background: #baf7fa; }
+
+.box {
+  position: relative;
+  margin: auto;
+  margin-top: 5%;
+  width: 400px;
+  height: 600px;
+  background: #0092ff; }
+
+.triangle {
+  position: absolute;
+  width: 45%;
+  height: 25%;
+  background: #baf7fa;
+  right: 0;
+  top: 0;
+  border-radius: 0 0 0 45px; }
+
+.triangle::after {
+  content: '';
+  position: absolute;
+  background: #0092ff;
+  width: 80%;
+  height: 80%;
+  left: 20%;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  clip-path: polygon(0 0, 0% 100%, 100% 100%); }
+
+.doc {
+  position: absolute;
+  width: 45%;
+  height: 35%;
+  background: #baf7fa;
+  left: 0%;
+  top: 20%;
+  border-radius: 0 45px 45px 0; }
+
+.doc::after {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 70%;
+  right: 20%;
+  top: 15%;
+  background: #0092ff; }
+
+.text {
+  position: absolute;
+  top: 25%;
+  font-size: 7rem;
+  z-index: 1;
+  right: 30%;
+  color: white;
+  font-family: Arial;
+  font-weight: 600; }

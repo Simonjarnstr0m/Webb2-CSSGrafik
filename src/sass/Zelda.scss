@@ -1,0 +1,120 @@
+@import 'Zeldamixing';
+@import 'Zeldasword';
+$heart-one:
+"t","g","g","t","g","g","t",
+"g","r","r","g","r","r","g",
+"g","r","r","g","r","r","g",
+"t","g","r","r","r","g","t",
+"t","t","g","r","g","t","t",
+"t","t","t","g","t","t","t";
+
+$heart-two:
+"t","g","g","t","g","g","t",
+"g","r","r","g","r","r","g",
+"g","r","r","g","r","r","g",
+"t","g","r","r","r","g","t",
+"t","t","g","r","g","t","t",
+"t","t","t","g","t","t","t";
+
+$heart-tre:
+"t","g","g","t","g","g","t",
+"g","r","r","g","w","w","g",
+"g","r","r","g","w","w","g",
+"t","g","r","r","w","g","t",
+"t","t","g","r","g","t","t",
+"t","t","t","g","t","t","t";
+
+$sword:
+"t","t","t","b","t","t","t",
+"t","t","b","b","b","t","t",
+"t","t","b","b","b","t","t",
+"t","t","b","b","b","t","t",
+"t","t","b","b","b","t","t",
+"t","t","b","b","b","t","t",
+"t","t","b","b","b","t","t",
+"t","t","b","b","b","t","t",
+"t","t","b","b","b","t","t",
+"t","t","b","b","b","t","t",
+"g","g","g","g","g","g","g",
+"g","t","b","b","b","t","g",
+"t","t","g","g","g","t","t",
+"t","t","b","b","b","t","t",
+"t","t","g","g","g","t","t";
+
+
+
+body{
+    background-color: #e2cf80;
+}
+.heart{
+    $size: 100px;
+
+    height: $size*6/7;
+    width: $size;
+
+    float: left;
+
+    margin-right: $size*1/7;
+}
+.sword{
+    
+    $siz: 100px;
+    
+        height: $siz*15/7;;
+        width: $siz;
+    
+        float: left;
+
+        margin: $siz*1/7
+    
+}
+.box{
+    width: 640px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+}
+.lifebar{
+    position: absolute;
+    width: 55%;
+    height: 20%;
+    overflow: auto;
+    left: 22.5%;
+
+}
+.swordbox{
+    position: absolute;
+    overflow: auto;
+    top: 20%;
+    left: 38%;
+}
+
+.text{
+    position: absolute;
+    font-family: vt323;
+    bottom: 10%;
+    left:0%;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #eef7fb;
+    text-align: center;
+
+    width: 90%;
+    height: 10%;
+text-shadow: 2px 2px #A6A2A2
+
+}
+.heart__one{
+@include heartpixelcolor($heart-one);
+
+}
+.heart__two{
+    @include heartpixelcolor($heart-two)
+}
+.heart__tre{
+    @include heartpixelcolor($heart-tre)
+}
+.sword__one{
+    @include swordpixelcolor($sword)
+}   

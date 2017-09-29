@@ -1,0 +1,22 @@
+body {
+  background: #f6d763; }
+
+.pokeball {
+  position: relative;
+  margin: auto;
+  margin-top: 5%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: linear-gradient(#ffffff, #ffffff 45%, #3f474a 45%, #3f474a 55%, #ee5365 55%, #ee5365);
+  transform: rotate(180deg); }
+
+.pokeball::before {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background-image: radial-gradient(#ffffff, #ffffff 40%, #3f474a 40%, #3f474a);
+  border-radius: 50%;
+  top: 40%;
+  left: 40%; }

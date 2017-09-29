@@ -1,0 +1,28 @@
+body{
+ background:  #DCC5DF;
+
+}
+.box{
+    position: relative;
+    height: 600px;
+    width: 580px;
+    border: black 1px solid;
+    margin: auto;
+    margin-top:5%;
+}
+.glass{
+position: absolute;
+width: 25%;
+height: 45%;
+border-radius:100px 100px 20px 20px;
+background: rgba(181, 243, 82, 0.69);
+z-index: 2;
+}
+.glass::after{
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: 10%;
+    background: #CBAA54;
+    z-index: 1;
+}
